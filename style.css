@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Estilos generales */
+
+section {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #D6B155;
+    position: relative;
+}
+
+.section-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 700;
+    border: solid 3px #D6B155;
+    background-color: #111;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translate(-50%);
+    padding: 20px 40px;
+}
+
+.more-button {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    background-color: #D6B155;
+    width: 5px;
+    overflow: visible;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.more-button p {
+    width: 200px;
+}
+
+.more-button:hover {
+    width: 200px;
+    color: black;
+}
+
+
+
+
+
+/* Header */
+
+.header {
+    padding: 10px 20px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px #D6B155;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+
+.header-logo {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 5;
+}
+
+.menu-header a {
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+
+.menu-header a:hover {
+    color: #D6B155;
+}
+
+.social-header i {
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6em;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-header i:hover {
+    color: #D6B155;
+}
+
+.responsive-menu {
+    display: none;
+    font-size: 30px;
+}
+
+.responsive-menu i {
+    color: whitesmoke;
+}
+
+/* Hero img */
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/heroimg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* object-fit: cover; */
+    width: 100%;
+    height: 900px;
+    padding-top: 60px;
+}
+
+/* Tour section */
+
+.tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('img/tour-background.jpg');
+    background-size: cover;
+}
+
+.section-tour-content {
+    color: #ccc;
+    width: 80%;
+    margin: auto;
+}
+
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-transform: uppercase;
+    /* padding: 20px; */
+    margin-bottom: 30px;
+    position: relative;
+    border: solid 2px #D6B155;
+}
+
+.show>div {
+    width: 300px;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.show::before {
+    content: 'sold out';
+    position: absolute;
+    top: 0;
+    left: -35px;
+    font-size: 16px;
+    color: black;
+    padding: 5px 15px;
+    background-color: #D6B155;
+    transform: rotate(-45deg);
+}
+
+.show-tickets-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-tickets-button div {
+    width: 150px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #D6B155;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 4px black solid;
+    transition: 0.3s;
+}
+
+.show-tickets-button div:hover {
+    background-color: black;
+    border: 4px solid #D6B155;
+    color: #ccc;
+}
+
+
+
+
+/* News */
+.news {
+    flex-direction: column;
+}
+
+.news-card {
+    color: whitesmoke;
+    margin: 10px;
+    max-width: 900px;
+    border: solid 3px #D6B155;
+    background-color: black;;
+    border-radius: 25px;
+    padding: 20px;
+    -webkit-box-shadow: -4px 5px 15px 5px rgba(0, 0, 0, 0.9);
+    box-shadow: -4px 5px 15px 5px rgba(0, 0, 0, 0.9);
+}
+
+.news-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.news-date {
+    background-color: #D6B155;
+    color: black;
+    padding: 5px 10px;
+    position:absolute;
+    top: 5px;
+    right: -75px;
+    -webkit-box-shadow: -4px 5px 15px 5px rgba(0, 0, 0, 0.9);
+    box-shadow: -4px 5px 15px 5px rgba(0, 0, 0, 0.9);
+    
+}
+
+.news-content {
+    display: flex;
+    align-items: center;
+    
+}
+
+.news-text p {
+    margin-left: 10px;
+    margin-bottom: 10px;;
+}
+
+.news-img {
+    width: 300px;
+}
+
+.news-content .more-button {
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Multimedia */
+
+.multimedia {
+    gap: 40px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('img/bonjovicd.jpg');
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    padding: 40px;;
+}
+
+.footer-social {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    section {
+        padding: 100px 10px;
+    }
+
+    .social-header {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-header {
+        position: absolute;
+        top: 59px;
+        left:-100%;
+        width: 100%;
+        background-color: #111;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+        -webkit-box-shadow: -4px 5px 15px 5px rgba(0, 0, 0, 0.9);
+    box-shadow: -4px 5px 15px 5px rgba(0, 0, 0, 0.9);
+    }
+
+    .responsive-active {
+        left: 0;
+    }
+
+    .header-logo {
+        top:0;
+        width: 100px;
+        
+    }
+
+    .hero-img {
+        height: 400px;        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),;
+    }
+
+    .news {
+        align-items: center;
+    }
+
+    .news-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .news-content {
+        flex-direction: column;
+    }
+
+    .news-img {
+        margin-bottom: 10px;
+    }
+
+    .news-date {
+        top:-35px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+}
